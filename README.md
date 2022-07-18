@@ -302,3 +302,32 @@ clarusway_blog_proj (folder)
 - [Python Django Example](https://realpython.com/get-started-with-django-1/)
 
 - [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/index.html)
+
+
+#how to force github private repo clone to my local repor
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+wookees-Air:aws-capstone-project wookeemin$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+wookees-Air:aws-capstone-project wookeemin$ git remote add AWS_Capstone https://github.com/wookeemin/aws-capstone-project.git
+wookees-Air:aws-capstone-project wookeemin$ git remote -v
+AWS_Capstone    https://github.com/wookeemin/aws-capstone-project.git (fetch)
+AWS_Capstone    https://github.com/wookeemin/aws-capstone-project.git (push)
+origin  https://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@github.com/wookeemin/aws-capstone-project.git (fetch)
+origin  https://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@github.com/wookeemin/aws-capstone-project.git (push)
+wookees-Air:aws-capstone-project wookeemin$ git push AWS_Capstone main
+Enumerating objects: 86, done.
+Counting objects: 100% (86/86), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (75/75), done.
+Writing objects: 100% (84/84), 386.07 KiB | 20.32 MiB/s, done.
+Total 84 (delta 9), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (9/9), done.
+To https://github.com/wookeemin/aws-capstone-project.git
+   5e67a29..8be3201  main -> main
+wookees-Air:aws-capstone-project wookeemin$ 
